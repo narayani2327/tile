@@ -36,7 +36,7 @@
     }
     echo"<input type='text' name='size' required>";
     $query = "SELECT * FROM nametable";
-    echo'<p class="para"><b>Sizes available in database are </b>';
+    echo'<p class="para"><b>Names available in database are </b>';
     if ($result = $con->query($query)) {
         while ($row = $result->fetch_assoc()) {
             $field1name = $row["namename"];
