@@ -1,0 +1,381 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    margin: 20px;
+    background-color: #d8f3dc;
+}
+h1{
+    text-align: center;
+    /* text-decoration: wavy underline 2px #A4133C; */
+    margin-bottom: 20px;
+    font-size: 40px;
+    font-weight: 800;
+    color: #081c15;
+}
+h2{
+    font-size: 35px;
+    text-align: center;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+h3{
+    font-size: 30px;
+    margin: 10px;
+    text-align: center;
+}
+.title{
+    text-align: center;
+    color: #081c15;
+    /* text-decoration: wavy underline 2px #A4133C; */
+    margin-bottom: 20px;
+    font-size: 40px;
+    font-weight: 800;
+}
+.typename{
+    background-color: lightcoral;
+    padding: 10px;
+    border: solid black 2px;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 8px;
+}
+/* .allbutton ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 15px;
+}
+.allbutton ul li{
+    list-style: none;
+    border: solid 2px olive;
+    padding: 10px;
+    text-align: center;
+    position: relative;
+    height:50px;
+    width:100px;
+    border-radius: 5px;
+    font-size: 20px;
+    float: left;
+}
+.allbutton ul ul{
+    display: none;
+}
+.allbutton ul li:hover >ul{
+    display: block;
+}
+.allbutton ul ul{
+    list-style-type: none;
+    padding: 10px;
+} */
+
+.allbutton ul{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 15px;
+    margin-bottom: 280px;
+}
+.allbutton ul li{
+    list-style: none;
+    text-align: center;
+    height:40px;
+    margin: 10px;
+    width:150px;
+    font-size: 20px;
+    float: left;
+    color: #d8f3dc;
+    font-weight: 700;
+    cursor: pointer;
+    transition-duration: 1s;
+    background-color: #081c15;
+    border-radius: 10px;
+}
+.allbutton ul li:hover{
+    background-color: #d8f3dc;
+    color: #081c15;
+    box-shadow: 2px 2px 4px #081c15,2px 2px 4px #081c15,-2px -2px 4px #081c15,-2px -2px 4px #081c15;
+}
+.box{
+    border: solid #081c15 2px;
+    height: 90vh;
+    width: 75vw;
+    position: absolute;
+    left: 57%;
+    top: 70%;
+    transform: translate(-50%,-50%);
+    background-color: #fbffbe;
+}
+.box{
+    padding: 20px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.46)),url(./images/pic3.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+}
+.box p{
+     color: #081c15;
+     font-size: 25px;
+     background-color: #d8f3dc;
+     border-radius: 10px;
+     margin: 20px;
+     padding: 8px;
+     text-align: center;
+     font-weight: 900;
+}
+.namee p{
+    font-size: 18px;
+}
+#vitri,#sani,#adhe,#bor,#tap{
+    border: dotted #081c15 3px;
+    background-color: lightgray;
+    text-align: center;
+    border-radius: 5px;
+    margin: 10px;
+}
+.block{
+    display: none !important;
+}
+.blur{
+    filter: blur(15px);
+}
+.btn{
+    color: lightpink;
+    background-color:#081c15;
+    border-radius: 5px;
+    padding: 10px;
+    border: solid #081c15 1px;
+    font-size: 15px;
+    font-weight: 400;
+    width: 100px;
+}
+.buttons{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 20px;
+}
+/* .sales{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+} */
+.graph{
+    display: flex;
+    flex-direction: horizontal;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.graph >div{
+    border:solid black 2px;
+    width: 500px;
+    height: 500px;
+    margin: 20px;
+}
+.back{
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    border: solid black 2px;
+    z-index: 2;
+}
+.up{
+    position: fixed;
+    right: 100px;
+    bottom: 20px;
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border: solid black 2px;
+    border-radius: 10px;
+    z-index: 2;
+}
+.back:hover,.up:hover{
+    background-color: white;
+    color: black;
+}
+.addsiz,.addnam{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    border: solid #081c15 2px;
+    box-shadow: 4px 4px 8px #081c15,4px 4px 8px #081c15;
+    border-radius: 10px;
+    padding: 20px;
+    z-index: 2;
+    background-color: #d8f3dc;
+}
+.addsiz h3,.addnam h3{
+    margin: 20px;
+    text-align: center;
+    color: #081c15;
+}
+.addnam,.addsiz{
+    background-color: #d9fff5;
+}
+.addsiz div,.addnam div,.main form{
+    font-size: 25px;
+    color: #081c15;
+}
+.addsiz input[type="text"],.addnam input[type="text"],.addsiz input[type="number"],.addnam input[type="number"],.main input[type="date"],.main input[type="date"]{
+    width:250px;
+    height: 30px;
+    margin: 20px;
+    color: #081c15;
+}
+.addsiz input[type="submit"],.addnam input[type="submit"],.main input[type="submit"],.salesform input[type="submit"],.purchases input[type="submit"]{
+    width:100px;
+    height: 30px;
+    margin-left: 35%;
+    margin-top: 20px;
+    background-color: #081c15;
+    color: #d8f3dc;
+    border-radius: 10px;
+    transition-duration: 1s;
+    font-size: 20px;
+}
+.addsiz input[type="submit"]{
+    margin-left: 215px;
+}
+.addsiz input[type="submit"]:hover,.addnam input[type="submit"]:hover,.main input[type="submit"]:hover,.salesform input[type="submit"]:hover,.purchases input[type="submit"]:hover{
+    background-color: transparent;
+    color: #081c15;
+    box-shadow: 4px 4px 8px #081c15,4px 4px 8px #081c15;;
+}
+.main ul{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 10px;
+}
+.main ul li{
+    list-style: none;
+    font-size: 25px;
+    color: #d8f3dc !important;
+    background-color: #081c15;
+    padding: 10px;
+    border-radius: 5px;
+    transition-duration: 1s;
+}
+.main ul li:hover{
+    background-color: transparent;
+    box-shadow: 2px 2px 4px #081c15,2px 2px 4px #081c15,-2px -2px 4px #081c15,-2px -2px 4px #081c15;
+    color: #081c15;
+}
+.main ul li a{
+    text-decoration: none;
+    color: #d8f3dc;
+}
+.main ul li a:hover{
+    color: #081c15;
+}
+.main ul li button{
+    background-color: transparent;
+    border: none;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 25px;
+    transition-duration: 1s;
+    color: #d8f3dc;
+    font-family: 'Times New Roman', Times, serif;
+}
+.main ul li button:hover{
+    background-color: transparent;
+    color: #081c15;
+}
+#toda, #todap{
+    margin: 25px;
+    padding: 20px;
+    border: double #081c15 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffdde3;
+}
+#todap{
+    background-color: #ffd9c0;
+}
+#toda table,#outt table,#total table, #todap table{
+    border: solid #081c15 2px;  
+    text-align: center;
+    margin: 20px;
+}
+#toda table th,#outt table th,#total table th,#todap table th{
+    background-color: #081c15;
+    color: #d8f3dc;
+}
+#oda table tr,th,td{
+    border: solid #081c15 2px;
+    font-size: 20px;
+    padding: 10px;
+}
+#outt,#total{
+    border: double #081c15 10px;
+    padding: 20px;
+    margin: 10px;
+    background-color: #fbffbe;
+}
+#total{
+    background-color: #ffd9c0;
+}
+.all{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.main>form{
+    border: solid #081c15 2px;
+    text-align: center;
+    width: 800px;
+    height: 300px;
+    margin: auto;
+    padding: 25px;
+    background-color: #d9fff5;
+}
+.salesform,.purchases,.sale,.purch{
+    border: double #081c15 10px;
+    background-color: #ffdde3;
+    margin: 10px;
+    padding: 20px;
+    color: #081c15;
+}
+.purchases,.purch{
+    background-color: #fbffbe;
+}
+.sale{
+    background-color: #ffd9c0;
+}
+.salesform p,.purchases p{
+    font-size: 20px;
+}
+.salesform input,.purchases input{
+    width:250px;
+    height: 30px;
+    margin: 20px;
+}
+.saless table ,.purchases table,.sale table,.purch table{
+    border: solid #081c15 2px;
+    margin: auto;
+    text-align: center;
+}
+.saless table th,.purchases table th,.sale table th,.purch table th{
+    background-color: #081c15;
+    color: #d8f3dc;
+}
