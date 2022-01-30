@@ -215,6 +215,10 @@ body{
     #title p{
         font-size:15px;
     }
+    .kit img{
+        width: 200px;
+        height: 150px;
+    }
 }
 @media screen and (min-width:480px) and (max-width:630px) {
     #title{
@@ -225,6 +229,10 @@ body{
     }
     #title p{
         font-size: 20px;
+    }
+    .kit img{
+        width: 200px;
+        height: 150px;
     }
 }
 @media screen and (min-width:631px) and (max-width:880px) {
