@@ -99,6 +99,7 @@ body{
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    padding-top: 80px;
 }
 .explore h2,.pro h2{
     margin: 15px;
@@ -165,11 +166,6 @@ body{
 }
 .copyright{
     font-size: 2vw;
-}
-.pro{
-    padding-top: 80px;
-    display: flex;
-    justify-content: space-evenly;
 }
 .pro h4{
     text-align: center;
