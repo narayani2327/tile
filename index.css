@@ -96,6 +96,9 @@ body{
     border: double #081c15 10px;
     border-radius: 10px;
     background-image:linear-gradient( #ffd9c0,#fbffbe);
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 .explore h2,.pro h2{
     margin: 15px;
