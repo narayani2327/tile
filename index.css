@@ -100,7 +100,7 @@ body{
 .explore h2,.pro h2{
     margin: 15px;
     text-align: center;
-    font-size: 3vw;
+    font-size: 30px;
 }
 .images{
     display: flex;
@@ -139,6 +139,9 @@ body{
 }
 .Social{
     margin: 50px 0px;
+}
+.Social, .college-info,.map{
+    width: 400px;
 }
 .icon{
     margin: 5px 20px;
